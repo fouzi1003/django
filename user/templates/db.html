@@ -1,0 +1,9 @@
+{% if data %}
+    <ul>
+    {% for question in data %}
+        <li>{{question}}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
